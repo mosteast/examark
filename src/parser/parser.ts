@@ -1,4 +1,3 @@
-// export const RE_input_call = /____?([a-zA-Z][a-zA-Z0-9]*)?\(([^)]*)\)/g
 export const RE_input_call = /@input\((?:([a-zA-Z][a-zA-Z0-9]*)(?:, )?)?(?:\[([^\)\]]*)\])?\)/g
 
 export function parse_input(source: string): T_input_token[] {

@@ -1,7 +1,7 @@
 {
-  "name": "@mosteast/xxx",
-  "description": "xxx",
-  "version": "0.0.1",
+  "name": "@mosteast/examark",
+  "description": "A markdown plugin",
+  "version": "1.0.0",
   "homepage": "https://github.com/xxx/xxx#readme",
   "repository": "github:xxx/xxx",
   "main": "build/index.js",
