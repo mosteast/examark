@@ -20,15 +20,18 @@
     "@mosteast/e": "^0.1.8"
   },
   "devDependencies": {
+    "@mosteast/command": "^0.1.8",
     "@types/fs-extra": "^8.0.1",
     "@types/jest": "^24.9.1",
     "@types/node": "^11.15.6",
     "@types/shelljs": "^0.8.6",
+    "@types/yargs": "^15.0.4",
     "fs-extra": "^8.1.0",
     "jest": "^24.9.0",
     "shelljs": "^0.8.3",
     "ts-jest": "^24.3.0",
     "ts-node": "^8.6.2",
-    "typescript": "^3.7.5"
+    "typescript": "^3.7.5",
+    "yargs": "^15.3.1"
   }
 }
