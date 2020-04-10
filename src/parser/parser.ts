@@ -12,6 +12,7 @@ export function parse_input(source: string): T_input_token[] {
     return {
       input: it[0],
       index: i,
+      index_name: `$${i + 1}`,
       char_index: it.index,
       name: it[1],
       validators: it[2]?.split(',').map(v => v.trim()).filter(it => !! it),
