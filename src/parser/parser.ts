@@ -14,7 +14,7 @@ export function parse_input(source: string): T_input_token[] {
       index: i,
       char_index: it.index,
       name: it[1],
-      validators: it[2]?.split(',').map(v => v.trim()),
+      validators: it[2]?.split(',').map(v => v.trim()).filter(it => !! it),
     }
   })
 }
