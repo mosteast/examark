@@ -21,9 +21,10 @@ export function parse_input(source: string): T_input_token[] {
 }
 
 export interface T_input_token {
-  input: string // Input match
-  index: number // Input index (order) in source
-  char_index: number // Character index in source
-  name?: string // Input name argument
-  validators?: string[] // validator list
+  input: string // Input match.
+  index: number // Input index (order) in source.
+  index_name: string // Human readable index name, if `index` is 0, `index_name` is $1.
+  char_index: number // Character index in source.
+  name?: string // Input name argument.
+  validators?: string[] // validator list.
 }
