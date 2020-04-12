@@ -13,17 +13,17 @@ it('parser_input_call', async () => {
   expect(r[0].input).toBe('@input(input1)')
   expect(r[0].index).toBe(0)
   expect(r[0].name).toBe('input1')
-  expect(r[0].validators).toBeFalsy()
+  expect(r[0].verifiers).toBeFalsy()
 
   expect(r[1].input).toBe('@input(input2, [a, b, c])')
   expect(r[1].index).toBe(1)
   expect(r[1].name).toBe('input2')
-  expect(r[1].validators).toStrictEqual([ 'a', 'b', 'c' ])
+  expect(r[1].verifiers).toStrictEqual([ 'a', 'b', 'c' ])
 
   expect(r[2].input).toBe('@input([c, d, e])')
   expect(r[2].index).toBe(2)
   expect(r[2].name).toBeFalsy()
-  expect(r[2].validators).toStrictEqual([ 'c', 'd', 'e' ])
+  expect(r[2].verifiers).toStrictEqual([ 'c', 'd', 'e' ])
 
-  expect(r[3].validators).toStrictEqual([])
+  expect(r[3].verifiers).toStrictEqual([])
 })

@@ -15,7 +15,7 @@ export function parse_input(source: string): T_input_token[] {
       index_name: `$${i + 1}`,
       char_index: it.index,
       name: it[1],
-      validators: it[2]?.split(',').map(v => v.trim()).filter(it => !! it),
+      verifiers: it[2]?.split(',').map(v => v.trim()).filter(it => !! it),
     }
   })
 }
@@ -26,5 +26,5 @@ export interface T_input_token {
   index_name: string // Human readable index name, if `index` is 0, `index_name` is $1.
   char_index: number // Character index in source.
   name?: string // Input name argument.
-  validators?: string[] // validator list.
+  verifiers?: string[] // validator list.
 }

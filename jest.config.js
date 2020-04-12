@@ -3,5 +3,6 @@ module.exports = {
   testEnvironment: 'node',
   transformIgnorePatterns: [
     'node_modules/(?!@ngrx|(?!deck.gl)|ng-dynamic)',
+    'build/',
   ],
 }
